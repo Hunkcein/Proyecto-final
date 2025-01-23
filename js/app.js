@@ -170,3 +170,48 @@ document.addEventListener('DOMContentLoaded', function() {
        resultados.forEach(resultado => contenedor.appendChild(resultado));
      }
 });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        function initRating(containerId, valueId) {
+            const stars = document.querySelectorAll(`#${containerId} .star`);
+            const ratingValue = document.getElementById(valueId);
+            
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    let selectedValue = star.getAttribute('data-value');
+                    stars.forEach((s, index) => {
+                        if (index < selectedValue) {
+                            s.classList.add('selected');
+                        } else {
+                            s.classList.remove('selected');
+                        }
+                    });
+                });
+    
+                star.addEventListener('mouseover', () => {
+                    let hoverValue = star.getAttribute('data-value');
+                    stars.forEach((s, index) => {
+                        if (index < hoverValue) {
+                            s.classList.add('hovered');
+                        } else {
+                            s.classList.remove('hovered');
+                        }
+                    });
+                });
+    
+                star.addEventListener('mouseleave', () => {
+                    stars.forEach(s => s.classList.remove('hovered'));
+                });
+            });
+        }
+    
+        initRating('rating1', 'value1');
+        initRating('rating2', 'value2');
+        initRating('rating3', 'value5');
+        initRating('rating4', 'value4');
+        initRating('rating5', 'value5');
+        initRating('rating6', 'value6');
+        initRating('rating7', 'value7');
+        initRating('rating8', 'value8');
+    });

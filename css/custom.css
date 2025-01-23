@@ -265,3 +265,25 @@ text-decoration: none;
   .filtro{
     display: none;
   }
+
+  .rating-container {
+    display: flex;
+}
+
+.star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star.selected,
+.star.hovered {
+    color: #ffcc00;
+}
+
+.rating-value {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
