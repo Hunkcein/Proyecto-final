@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logo.jpg" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="div">
+        <video autoplay muted loop class="video-1">
+            <source src="video/video5.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Aprende algo nuevo</h2>
+                        <p>Todos los cursos a $15</p>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
+                            <input type="submit" id="submit-buscador" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>20,000 Cursos en línea <br>
+                    Explora  los temas más recientes</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Instructores Expertos <br>
+                    Aprende con distintos estilos</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Acceso de por vida <br>
+                    Aprende a tu ritmo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="encabezado" class="encabezado">Cursos En Línea</h1>
+    <div id="lista-cursos" class="container">
+        <!--.row-->
+        <div class="row">
+            <!--.card-->
+            <div class="four columns" id="card-1">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q1.jpg" class="img-q1">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a1.jpg" class="img-a1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-2">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q2.png" class="img-q2">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a2.jpg" class="img-a2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Curso IA Generativa + Prompt Engineering con ChatGPT-4</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-3">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q3.jpg" class="img-q3">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a3.jpg" class="img-a3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Aprende a Programar con Python. Practicando con proyectos</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+        </div>
+        <!--.row-->
+
+        <!--.row-->
+        <div class="row">
+            <!--.card-->
+            <div class="four columns" id="card-4">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q4.png" class="img-q4">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a4.png" class="img-a4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Ciberseguridad y Privacidad de Empresas</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-5">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q5.jpg" class="img-q5">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a5.jpg" class="img-a5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Diseño Grafico Completo</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-6">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q6.jpg" class="img-q6">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a6.jpg" class="img-a6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Diseño y Desarrollo Web</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+        </div>
+        <!--.row-->
+
+        <!--.row-->
+        <div class="row">
+            <!--.card-->
+            <div class="four columns" id="card-7">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q7.jpg" class="img-q7">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a7.jpeg" class="img-a7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Diseño y Desarrollo de VideoJuegos</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-8">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q8.jpg" class="img-q8">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a8.jpg" class="img-a8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Reparacion y Software de Dispositivos Moviles</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-9">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q9.jpg" class="img-q9">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a9.jpg" class="img-a9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Reparacion y Software de Computadoras</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+        </div>
+        <!--.row-->
+
+        <!--.row-->
+        <div class="row">
+            <!--.card-->
+            <div class="four columns" id="card-10">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q10.png" class="img-q10">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a10.jpg" class="img-a10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Master en Angular</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-11">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q11.jpg" class="img-q11">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a11.png" class="img-a11">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Aprende Git de Cero a Experto</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-12">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q12.jpeg" class="img-q12">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a12.jpg" class="img-a12">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Fullstack developer</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+        </div>
+        <!--.row-->
+
+        <!--.row-->
+        <div class="row">
+            <!--.card-->
+            <div class="four columns" id="card-13">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q10.png" class="img-q10">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a10.jpg" class="img-a10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Curso de lenguajes de Programacion</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-14">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q11.jpg" class="img-q11">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a11.png" class="img-a11">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>JavaScript Moderno</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="four columns" id="card-15">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/q12.jpeg" class="img-q12">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/a12.jpg" class="img-a12">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Curso de Desarrollador De Call Of Duty Warzone Mobile</h4>
+                        <p>Leandro Moreno</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!--.card-->
+        </div>
+        <!--.row-->
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
