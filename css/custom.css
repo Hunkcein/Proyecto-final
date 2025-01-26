@@ -243,22 +243,22 @@ text-decoration: none;
   }
   
   .flip-card-front {
-    background-color: #27a9d1;
+    background-color: #27a9d100;
     color: black;
   }
   
   .flip-card-back {
-    background-color: #29b97d;
+    background-color: #29b97d00;
     color: white;
     transform: rotateY(180deg);
   }
 
 .video-1{
     position:absolute;
-    top: 12.5%;
-    left: 1vh;
-    width: 197.6vh;
-    height: 55vh;
+    top: 13.5%;
+    left: 0vh;
+    width: 197.8vh;
+    height: 54.3vh;
     object-fit: cover;
   }
 
@@ -287,3 +287,5 @@ text-decoration: none;
     margin-top: 10px;
     font-size: 1.2rem;
 }
+
+

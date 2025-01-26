@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         } else {
                             s.classList.remove('selected');
                         }
-                    });
+                    }); 
                 });
     
                 star.addEventListener('mouseover', () => {
@@ -208,10 +208,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
         initRating('rating1', 'value1');
         initRating('rating2', 'value2');
-        initRating('rating3', 'value5');
+        initRating('rating3', 'value3');
         initRating('rating4', 'value4');
         initRating('rating5', 'value5');
         initRating('rating6', 'value6');
         initRating('rating7', 'value7');
         initRating('rating8', 'value8');
+        initRating('rating9', 'value9');
+        initRating('rating10', 'value10');
+        initRating('rating11', 'value11');
+        initRating('rating12', 'value12');
+        initRating('rating13', 'value13');
+        initRating('rating14', 'value14');
+        initRating('rating15', 'value15');
     });
