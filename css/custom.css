@@ -266,12 +266,11 @@ text-decoration: none;
 
 .video-1{
     position:absolute;
-    top: 13.5%;
+    top: 14.5%;
     left: 0vh;
-    width: 197.8vh;
-    height: 54.3vh;
+    width: 202.6vh;
+    height: 64.7vh;
     object-fit: cover;
-    padding: 0px;
   }
 
   .filtro{
