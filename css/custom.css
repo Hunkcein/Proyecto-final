@@ -24,7 +24,10 @@ header {
         text-align: left;
     }
 }
-
+#logo{
+    height: 100px;
+    width: 100px;
+}
 .borrar-curso {
   background-color: red;
   border-radius: 50%;
@@ -51,7 +54,11 @@ ul {
 .submenu {
     position: relative;
 }
-
+.rom{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
 .submenu #carrito{
     display: none;
 }
@@ -87,11 +94,11 @@ ul {
     margin-bottom: 0;
     position: relative;
     top:0%;
-    left: 50%;
+    left: 0%;
 }
 .contenido-hero form .submit-buscador {
     position: absolute;
-    right: -50%;
+    right: 0%;
     top:0;
     height: 100%;
     padding: 0;
@@ -153,7 +160,11 @@ ul {
 .agregar-carrito {
     margin:10px 0;
 }
-
+.rowi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card {
   width: 293px; /* Ajusta el ancho según tus necesidades */
   height: 399px; /* Establece una altura fija para todos los cards */
@@ -260,6 +271,7 @@ text-decoration: none;
     width: 197.8vh;
     height: 54.3vh;
     object-fit: cover;
+    padding: 0px;
   }
 
   .filtro{
